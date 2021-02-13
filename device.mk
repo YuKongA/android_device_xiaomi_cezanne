@@ -356,4 +356,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 
 # Inherit vendor
-$(call inherit-product, vendor/redmi/cezanne/cezanne-vendor.mk)
+$(call inherit-product, vendor/xiaomi/cezanne/cezanne-vendor.mk)
