@@ -18,4 +18,3 @@ The Redmi K30 Ultra (codenamed _"cezanne"_) is a high-end, mid-range smartphone 
 
 
 **Copyright (C) 2020 The Potato Open Source Project**
-**Copyright (C) 2020 Magicial-Studio**
