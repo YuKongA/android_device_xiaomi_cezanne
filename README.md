@@ -1,3 +1,4 @@
-Redmi K30 Ultra (cezanne)
+# device_redmi_cezanne
+Device tree for M2006J10C
 
-### device_redmi_cezanne
+### Redmi K30 Ultra (cezanne)
