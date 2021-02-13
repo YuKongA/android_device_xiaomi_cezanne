@@ -1,7 +1,7 @@
 [
   {
-    "repository" : "vendor_redmi_cezanne",
-    "target_path": "vendor/redmi/cezanne"
+    "repository" : "vendor_xiaomi_cezanne",
+    "target_path": "vendor/xiaomi/cezanne"
   },
   {
     "repository" : "vendor_mediatek_opensource",
