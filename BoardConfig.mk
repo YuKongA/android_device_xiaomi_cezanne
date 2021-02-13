@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 Lineage Open Source Project
+# Copyright (C) 2020 Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/redmi/cezanne
+DEVICE_PATH := device/xiaomi/cezanne
 
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2400
 
 # Allow missing dependencies
-ALLOW_MISSING_DEPENDENCIES := true
+#ALLOW_MISSING_DEPENDENCIES := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -39,7 +39,7 @@ ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # APEX image
-#DEXPREOPT_GENERATE_APEX_IMAGE := true
+DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -77,6 +77,8 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
+BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt
+TARGET_FORCE_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb
@@ -109,6 +111,9 @@ BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 #BOARD_AVB_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+
+# system_as_root
+BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Broken rules
 BUILD_BROKEN_DUP_RULES := true
@@ -149,7 +154,7 @@ TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-#TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6885
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6885
 
 # Crypto
 #PLATFORM_SECURITY_PATCH := 2099-12-31

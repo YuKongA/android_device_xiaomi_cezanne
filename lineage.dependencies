@@ -13,6 +13,6 @@
   },
   {
     "repository" : "vendor_mediatek_ims",
-    "target_path": "vendor/mediatek/ims"
+    "target_path": "vendor/mediatek/ims",
   }
 ]
