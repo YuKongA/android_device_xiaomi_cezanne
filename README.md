@@ -1,4 +1,4 @@
-Device configuration for Redmi K30 Ultra (cezanne)
+Redmi K30 Ultra (cezanne)
 ===================================================
 
 
