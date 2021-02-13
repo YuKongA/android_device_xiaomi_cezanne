@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The Potato Open Sauce Project
+# Copyright (C) 2020 Lineage Open Sauce Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
