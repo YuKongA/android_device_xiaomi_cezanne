@@ -17,7 +17,7 @@
 # Dynamic
 PRODUCT_RELEASE_NAME := cezanne
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-DEVICE_PATH := device/redmi/cezanne
+DEVICE_PATH := device/xiaomi/cezanne
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 # Inherit from begonia device
-$(call inherit-product, device/redmi/cezanne/device.mk)
+$(call inherit-product, device/xiaomi/cezanne/device.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
