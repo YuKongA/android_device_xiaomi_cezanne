@@ -338,7 +338,7 @@
          Specify the component name or an empty string if none.
          Note that doze dreams are not subject to the same start conditions as ordinary dreams.
          Doze dreams will run whenever the power manager is in a dozing state. -->
-     <string name="config_dozeComponent">com.miui.aod/com.miui.aod.doze.DozeService</string>
+     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
     <!-- Regex of wired ethernet ifaces -->
      <string name="config_ethernet_iface_regex">eth\\d</string>
@@ -685,5 +685,9 @@
         <item>7,1</item>
         <item>9,1</item>
     </string-array>
-
+     
+    <!-- Rounded corner padding and radius -->
+    <dimen name="rounded_corner_radius_top">102.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">102.0px</dimen>
+     
 </resources>
