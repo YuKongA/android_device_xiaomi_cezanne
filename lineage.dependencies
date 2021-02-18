@@ -1,5 +1,9 @@
 [
   {
+   "repository"  : "device_mediatek_sepolicy",
+   "target_path" : "device/mediatek/sepolicy",
+  },
+  {
     "repository" : "vendor_xiaomi_cezanne",
     "target_path": "vendor/xiaomi/cezanne"
   },
